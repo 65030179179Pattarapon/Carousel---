@@ -33,6 +33,102 @@
 
 ## 7. ปรับปรุงและตกแต่งโค้ดใน `index.html`
 - ให้นักเรียนปรับแต่งและตกแต่งโค้ดในไฟล์ `index.html` ให้สวยงามตามความคิดสร้างสรรค์ เช่น การเพิ่มรูปภาพ ข้อความ หรือการเปลี่ยนแปลงสีสัน และองค์ประกอบต่างๆ เพื่อให้เหมาะสมกับความต้องการของตนเอง
+ ```Source Code index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Fullscreen</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
 
+  .carousel-inner img {
+    width: 100%; /* ครอบคลุมความกว้างหน้าจอ */
+    height: calc(100vh - 56px); /* ปรับขนาดให้พอดีความสูงของหน้าจอ */
+    object-fit: contain; /* ทำให้รูปภาพทั้งหมดแสดงผลแบบไม่ถูกตัด */
+  }
+
+  .carousel-caption {
+    bottom: 15%; /* ขยับตำแหน่งขึ้นเล็กน้อย */
+  }
+
+  .carousel-caption h5 {
+    font-size: 3rem; /* ขนาดหัวข้อใหญ่ */
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+    color: #fff; /* ตัวอักษรสีขาว */
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  @media (max-width: 768px) {
+    .carousel-caption h5 {
+      font-size: 2rem;
+    }
+    .carousel-caption p {
+      font-size: 1rem;
+    }
+  }
+</style>
+  </head>
+  <body>
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- Slide 1 -->
+        <div class="carousel-item active">
+          <img src="ใส่รูปภาพที่ 1" class="d-block w-100" alt="Slide 1">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 1</h5>
+            <p>ใส่คำอธิบายรูปภาพที่ 1</p>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="carousel-item">
+          <img src="ใส่รูปภาพที่ 2" class="d-block w-100" alt="Slide 2">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 2</h5>
+            <p>ใส่คำอธิบายรูปภาพที่ 2</p>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="carousel-item">
+          <img src="ใส่รูปภาพที่ 3" alt="Slide 3">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Slide 3</h5>
+            <p>ใส่คำอธิบายรูปภาพที่ 3</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+ ```
 ## 8. ทดลองรันสคริปต์อีกครั้ง
 - หลังจากการปรับปรุงโค้ดแล้ว ให้นักเรียนทดลองรันสคริปต์อีกครั้งเพื่อดูการเปลี่ยนแปลงของผลลัพธ์ที่ได้ และตรวจสอบว่าการตกแต่งที่ทำไปนั้นแสดงผลตามที่ต้องการหรือไม่
+
