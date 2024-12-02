@@ -8,7 +8,10 @@
 
 ## 3. เปิด Google Sheets และตั้งชื่อไฟล์
 - สร้าง Google Sheets ใหม่ โดยตั้งชื่อและตั้งค่าการอนุญาตต่างๆ เพื่อให้สามารถเข้าถึงได้
+![Screenshot 2024-12-02 110357](https://github.com/user-attachments/assets/8c782a88-6210-4685-b166-2ecb5f10acde)
+
 - เปิดใช้ Google Apps Script ผ่านเมนู **ส่วนขยาย > Apps Script**
+![Screenshot 2024-12-02 105627](https://github.com/user-attachments/assets/09f2d760-416b-4a1e-bd08-33eff7e44a0d)
 
 ## 4. สร้างไฟล์ `Code.gs`
 - ใน Google Apps Script ให้สร้างไฟล์ `Code.gs` และเพิ่มโค้ดฟังก์ชัน `doGet(e)` ดังนี้:
@@ -21,6 +24,8 @@
 
 ## 5. สร้างไฟล์ `index.html`
 - สร้างไฟล์ใหม่ใน Google Apps Script โดยเลือก **File > New > HTML** ตั้งชื่อว่า `index.html`
+![Screenshot 2024-12-02 110937](https://github.com/user-attachments/assets/220edd97-15d3-416b-a33d-c09f76adaf02)
+![Screenshot 2024-12-02 111024](https://github.com/user-attachments/assets/f7e38601-dd6d-4396-8290-4703e57b3ccc)
 - นำ **source code** สำหรับ Carousel ที่เลือกจากเว็บไซต์ Bootstrap มาวางในไฟล์ `index.html`
 
 ## 6. ทดลองรันสคริปต์
